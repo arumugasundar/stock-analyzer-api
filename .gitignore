@@ -1,0 +1,35 @@
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Environment Variables (SENSITIVE) ---
+.env
+.env.local
+.env.*.local
+
+# --- Python Build & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# --- Database (FastAPI/SQLAlchemy) ---
+*.sqlite3
+*.db
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
