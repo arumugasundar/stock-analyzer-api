@@ -8,7 +8,7 @@ from compute import run_computation
 from validate import validate_df
 
 app = FastAPI()
-origins = [ "https://d2yr116unbb4sb.cloudfront.net/", "http://localhost:5173" ]
+origins = [ "https://doqsme6l7tigx.cloudfront.net/", "http://localhost:5173", "http://localhost:4173" ]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 @app.get("/")
