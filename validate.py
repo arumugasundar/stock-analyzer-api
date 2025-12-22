@@ -12,7 +12,7 @@ def validate_df(df, sheet_name="Default"):
         row_num = i + 2  # Adjust for 0-index and header row
         # Time validation
         try:
-            pd.to_datetime(row['time'], format='%d/%m/%Y', errors='raise')
+            pd.to_datetime(row['time'], format='%d-%m-%Y', errors='raise')
         except:
             errors.append(f"Row {row_num}: 'time' must be dd-mm-yyyy")
         # Price validation
