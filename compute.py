@@ -23,8 +23,8 @@ def run_computation(df: pd.DataFrame, x: int, y: int, i: int, j: int):
         lower = (val // interval) * interval
         return f"{int(lower)} to {int(lower + interval)}"
 
-    vol_range_col = f'{volume_pct_diff_col}_Range_{i}'
-    pri_range_col = f'{price_return_col}_Range_{j}'
+    vol_range_col = f'{volume_pct_diff_col}_Range_{int(i)}'
+    pri_range_col = f'{price_return_col}_Range_{int(j)}'
     df[vol_range_col] = df[volume_pct_diff_col].apply(lambda v: get_range_label(v, i))
     df[pri_range_col] = df[price_return_col].apply(lambda v: get_range_label(v, j))
 
