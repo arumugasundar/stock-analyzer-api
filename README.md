@@ -1,6 +1,6 @@
 # Time-Series Stock Analyzer (Backend)
 
-This is a fastAPI based backend application responsible for processing excel file along with paramters to perform computations on time-series data
+This is a fastAPI based backend application responsible for processing excel file along with parameters to perform computations on time-series data
 
 ## 🛠️ Technology Stack
 
@@ -15,7 +15,9 @@ This is a fastAPI based backend application responsible for processing excel fil
 ## 🛡️ Security Measures
 
 * **Origin Protection:** API access is restricted to whitelisted domains via CORS.
+
 * **Resource Management:** File uploads are size-limited to ensure system stability and prevent high memory usage
+
 * **Format Validation:** Strict support for `.csv` and `.xlsx` files only.
 
 * **Data Integrity:** Header and data validation with user-friendly error feedback.
